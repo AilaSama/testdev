@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "testdev",
+	"version": "${version}",
+	"name": "testdev",
+	"description": "This is a test mod created by Aila,who is learning Java Dev",
+	"authors": [
+		"Aila_Sama"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/testdev/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.aila.testdev.Testdev"
+		],
+		"fabric-datagen": [
+			"com.aila.testdev.TestdevDataGenerator"
+		],
+		"clients": [
+			"com.aila.testdev.TestdevClient"
+		]
+	},
+	"mixins": [
+		"testdev.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
