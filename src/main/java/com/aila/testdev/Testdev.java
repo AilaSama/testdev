@@ -1,5 +1,6 @@
 package com.aila.testdev;
 
+import com.aila.testdev.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -21,6 +22,7 @@ public class Testdev implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItems.register();
 		LOGGER.info("Hello Fabric world!");
 	}
 
