@@ -1,5 +1,6 @@
 package com.aila.testdev;
 
+import com.aila.testdev.item.ModCreativeModeTabs;
 import com.aila.testdev.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -11,9 +12,9 @@ import org.slf4j.LoggerFactory;
 public class Testdev implements ModInitializer {
 	public static final String MOD_ID = "testdev";
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
+	//该记录器用于向控制台和日志文件写入文本。
+	//使用你的模组ID作为日志员的名字被认为是最佳实践。
+	//这样一来，就能清楚知道是哪个版主写了信息、警告和错误。
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
@@ -23,6 +24,7 @@ public class Testdev implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.register();
+		ModCreativeModeTabs.register();
 		LOGGER.info("Hello Fabric world!");
 	}
 

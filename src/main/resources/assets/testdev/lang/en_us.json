@@ -2,5 +2,6 @@
   "item.testdev.material.the_gravel": "Deng's Gravel",
   "item.testdev.the_tear": "Deng's Tear",
   "item.testdev.the_heart": "Deng's Heart",
-  "item.testdev.the_eye": "Deng's Eye"
+  "item.testdev.the_eye": "Deng's Eye",
+  "itemGroup.testdev":"Deng is Watching U"
 }
